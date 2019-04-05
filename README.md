@@ -1,3 +1,5 @@
+# DS Docker VS Code Template
+
 Example template that spins up a self-contained data science environment within a container, that includes:
 
 1. Conda for Python dependencies
