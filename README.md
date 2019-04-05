@@ -22,12 +22,10 @@ Completely based on [Coder's](https://coder.com/) incredible work. Their GitHub 
 
 Clone this down and rename the folder to be your project name. Modify the `environment.yml` file to include all the Python packages you need.
 
-Say you rename the folder to `churn-prediction` - run the following:
 
 ```
-cd churn-prediction
-docker build -t churn-prediction .
-docker run -p 8443:8443 -p 8888:8888 -v $(pwd)/data:/data -v $(pwd)/code:/code --rm -it churn-prediction
+docker build -t ds-env .
+docker run -p 8443:8443 -p 8888:8888 -v ${PWD}:/workdir --rm -it ds-env 
 ```
 
 This will spin up the container - starting up JupyerLab and VSCode. 
